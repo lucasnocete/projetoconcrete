@@ -1,0 +1,27 @@
+{
+  "name": "projetoConcrete",
+  "version": "0.0.1",
+  "description": "API RESTFul",
+  "main": "app.js",
+  "scripts": {
+    "gulp-lint": "gulp lint",
+    "istanbul-mocha": "node_modules/istanbul/lib/cli.js cover node_modules/.bin/_mocha tests/**/*.test.js",
+    "build": "gulp lint && node_modules/istanbul/lib/cli.js cover node_modules/.bin/_mocha tests/**/*.test.js"
+  },
+  "author": "Lucas Nocete <lucasnocete@hotmail.com>",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-eslint": "^0.12.0",
+    "gulp-jsonlint": "^1.1.0",
+    "istanbul": "^0.3.14",
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.5.0",
+    "express": "^4.13.4",
+    "jwt-simple": "^0.5.0",
+    "moment": "^2.7.0",
+    "mongoose": "^4.4.13"
+  }
+}
